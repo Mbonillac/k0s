@@ -2,7 +2,7 @@
 ## Descripción
 Repositorio para las prácticas de K0s en un servidor virtual.
 
-##Índice
+## Índice
 
 1. Introducción
 2. Instalación
