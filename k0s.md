@@ -1,6 +1,6 @@
 <center>
 
-![Logo-k0s](https://github.com/Mbonillac/k0s/blob/main/imagenes/k0s-logo-blanco.png?raw=true)
+![Logo-k0s](https://github.com/Mbonillac/k0s/blob/main/imagenes/k0s-logo-blanco-60.png)
 
 </center>
 
