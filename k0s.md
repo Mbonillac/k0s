@@ -1,7 +1,7 @@
 
 <center>
 
-![Logo-k0s](https://github.com/Mbonillac/k0s/blob/main/imagenes/k0s-logo-blanco-60.png)
+![Logo-k0s](https://github.com/Mbonillac/k0s/blob/main/imagenes/k0s-logo-blanco-40.png?raw=true)
 
 </center>
 
