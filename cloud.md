@@ -2,13 +2,13 @@
 
 Para este ejercicio se ha elegido la plataforma de [clouding.io](https://clouding.io/#)
   
-Clouding es tu plataforma Cloud de referencia, a tu medida y diseñada pensando en ti y en tus necesidades.
+Clouding es la plataforma Cloud de referencia, a la medida y diseñada pensando en ti y en tus necesidades.
 
 **Facturación por horas.**  
-Paga por horas, no por meses. Y disfruta de los recursos que realmente necesites. Nos adaptamos a ti, también en la facturación de nuestro servicio.
+Paga por horas, no por meses. Y disfruta de los recursos que realmente necesites. Nos adaptamos en la facturación de nuestro servicio.
 
 **Alta Disponibilidad**  
-Tus Servidores Cloud siempre estarán disponibles y operativos en nuestra plataforma redundante y de altas prestaciones. En Clouding nos aseguramos de que ningún fallo pueda estropear tu día a día.  
+Tus Servidores Cloud siempre estarán disponibles y operativos en la plataforma redundante y de altas prestaciones. En Clouding se aseguran de que ningún fallo pueda estropear tu día a día.  
 
 **Soporte de calidad y cercano**  
 Nos sentimos satisfechos cuando todas tus dudas quedan resueltas. Así que nos esforzamos por aclararte todas las preguntas sobre tu servidor, ¡nuestro equipo está a tu lado 24/7!  
