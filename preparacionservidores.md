@@ -5,7 +5,7 @@ Para poner en funcionamiento k0s, se va a montar un servidor web con una página
 
 ## Preparando el servidor
 
-Para lanzar k0s es necesario un servidor, que en este caso ha sido creado en [clouding.io](clouding.io) con las siguientes características:  
+Para lanzar k0s es necesario un servidor, que en este caso ha sido creado en [clouding.io](https://portal.clouding.io/) con las siguientes características:  
  
 <center>
 
