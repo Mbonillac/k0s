@@ -90,20 +90,20 @@ lines 1-30/30 (END)
 6. Iniciamos el cluster:
 
 ~~~
-root@servidork0s:~# k0s start
+root@debian209-1:~# k0s start
 ~~~
 
 7.  Creamos un pod:
 
 ~~~
-root@servidork0s:~# k0s kubectl apply -f apache2.yaml
+root@debian209-1:~# k0s kubectl apply -f apache2.yaml
 pod/pod-apache2 created
 ~~~
 
 8. Comprobamos que esta lanzado:
 
 ~~~
-root@servidork0s:~# k0s kubectl get all
+root@debian209-1:~# k0s kubectl get all
 NAME              READY   STATUS    RESTARTS   AGE
 pod/pod-apache2   1/1     Running   0          61s
 
@@ -113,7 +113,7 @@ service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   74m
 
 8. 1 Entramos dentro del pod y editamos la web. (Realmente copiamos el index.html y con un echo le pasamos un título)
 ~~~
-root@servidork0s:~# k0s kubectl exec pod/pod-apache2 -it -- /bin/bash
+root@debian209-1:~# k0s kubectl exec pod/pod-apache2 -it -- /bin/bash
 root@pod-apache2:/usr/local/apache2#  mv /usr/local/apache2/htdocs/index.html /usr/local/apache2/htdocs/index.html.original
 root@pod-apache2:/usr/local/apache2# echo "Bienvenidos a la web de Manuel Bonilla" > /usr/local/apache2/htdocs/index.html
 root@pod-apache2:/usr/local/apache2# exit
@@ -122,7 +122,7 @@ root@pod-apache2:/usr/local/apache2# exit
 8. 2 Creamos pasarela
 
 ~~~
-root@servidork0s:~# k0s kubectl port-forward pod/pod-apache2 80:80
+root@debian209-1:~# k0s kubectl port-forward pod/pod-apache2 80:80
 Forwarding from 127.0.0.1:80 -> 80
 Forwarding from [::1]:80 -> 80
 ~~~

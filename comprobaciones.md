@@ -28,7 +28,7 @@ debian209-1   Ready    <none>   5h53m   v1.22.2+k0s
 
 ## Información del pod:
 ~~~
-root@servidork0s:~# k0s kubectl get all
+root@debian209-1:~# k0s kubectl get all
 NAME              READY   STATUS    RESTARTS   AGE
 pod/pod-apache2   1/1     Running   0          15m
 
@@ -39,7 +39,7 @@ service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   89m
 ## Información detallada del pod:
 
 ~~~
-root@servidork0s:~# k0s kubectl describe pod/pod-apache2
+root@debian209-1:~# k0s kubectl describe pod/pod-apache2
 Name:         pod-apache2
 Namespace:    default
 Priority:     0
