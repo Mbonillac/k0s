@@ -2,7 +2,7 @@
 Aquí encontrarás los pasos necesarios para instalar k0s.  
 Empecemos...
 
-* 1. Actualizar los repositorios:
+1. Actualizar los repositorios:
 ~~~ 
 root@debian209-1:~# root@debian209-1:~# apt update
 Hit:1 http://deb.debian.org/debian bullseye InRelease
@@ -19,7 +19,7 @@ Reading state information... Done
 
 ~~~
 
-* 2. Descargar la ultima versión estable de K0s y hacemos que sea ejecutable y damos permisos de ejecución:
+2. Descargar la ultima versión estable de K0s y hacemos que sea ejecutable y damos permisos de ejecución:
 
 ~~~
 root@debian209-1:~# curl -L https://get.k0s.sh | sh
@@ -32,7 +32,7 @@ k0s is now executable in /usr/local/bin
 root@servidork0s:~# chmod 777 /usr/local/bin/k0s
 ~~~
 
-* 3. Instalamos k0s como controlador con instancias de un único nodo:
+3. Instalamos k0s como controlador con instancias de un único nodo:
 
 ~~~
 root@debian209-1:~# k0s install controller --single
@@ -44,7 +44,7 @@ INFO[2021-12-07 14:30:47] creating user: kube-scheduler
 INFO[2021-12-07 14:30:47] Installing k0s service
 ~~~
 
-* 4. Iniciamos k0s como servicio.
+4. Iniciamos k0s como servicio.
 
 ~~~
 root@debian209-1:~# k0s start
@@ -100,7 +100,7 @@ root@debian209-1:~# k0s kubectl apply -f apache2.yaml
 pod/pod-apache2 created
 ~~~
 
-8. Comprobamos que esta lanzado:
+8. 1 Comprobamos que esta lanzado:
 
 ~~~
 root@debian209-1:~# k0s kubectl get all
@@ -111,7 +111,7 @@ NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
 service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   74m
 ~~~
 
-8. 1 Entramos dentro del pod y editamos la web. (Realmente copiamos el index.html y con un echo le pasamos un título)
+8. 2 Entramos dentro del pod y editamos la web. (Realmente copiamos el index.html y con un echo le pasamos un título)
 ~~~
 root@debian209-1:~# k0s kubectl exec pod/pod-apache2 -it -- /bin/bash
 root@pod-apache2:/usr/local/apache2#  mv /usr/local/apache2/htdocs/index.html /usr/local/apache2/htdocs/index.html.original
@@ -119,7 +119,7 @@ root@pod-apache2:/usr/local/apache2# echo "Bienvenidos a la web de Manuel Bonill
 root@pod-apache2:/usr/local/apache2# exit
 ~~~
 
-8. 2 Creamos pasarela
+8. 3 Creamos pasarela
 
 ~~~
 root@debian209-1:~# k0s kubectl port-forward pod/pod-apache2 80:80
@@ -129,4 +129,4 @@ Forwarding from [::1]:80 -> 80
 
 9. Desde otra terminal accedemos a la web del pod:
 
-![comprobacion acceso a localhost](https://github.com/Mbonillac/k0s/blob/main/imagenes/comprobacion-web-apache.png?raw=true)
+![comprobacion acceso a localhost](https://github.com/Mbonillac/k0s/blob/main/imagenes/comprobacion-web-apache.PNG?raw=true)

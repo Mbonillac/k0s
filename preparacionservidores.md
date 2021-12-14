@@ -5,23 +5,26 @@ Para poner en funcionamiento k0s, se va a montar un servidor web con una página
 
 ## Preparando el servidor
 
+Para lanzar k0s es necesario un servidor, que en este caso ha sido creado en [clouding.io](clouding.io) con las siguientes características:  
+ 
 <center>
 
-![servido-k0s](https://github.com/Mbonillac/k0s/blob/main/imagenes/Winscp-40.png?raw=true)
+![servido-k0s](https://github.com/Mbonillac/k0s/blob/main/imagenes/caract_server.PNG?raw=true)
 
 </center>
 
 
  ## Preparando el Pod  
 
-Para lanzar un pod es necesario un archivo yaml que lo configure, este archivo deb erá ser cargado dentro del servidor para poder ser lanzado y ejecutado por kubectl.  
+Para lanzar un pod es necesario un archivo yaml que lo configure, este archivo deberá ser cargado dentro del servidor para poder ser lanzado y ejecutado por kubectl.  
 Para ello se ha utilizado la herramienta Winscp, tambien puede ser usado scp.  
+
 
 <center>
 
-![WinSCP-yaml](https://github.com/Mbonillac/k0s/blob/main/imagenes/Winscp-40.png?raw=true)
+![WinSCP-yaml](https://github.com/Mbonillac/k0s/blob/main/imagenes/windscp-yaml.PNG?raw=true)
 
-</center>
+</center>  
 
 
  ## Preparando el Archivo Yaml  
