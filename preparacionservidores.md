@@ -31,7 +31,7 @@ Para ello se ha utilizado la herramienta Winscp, tambien puede ser usado scp.
 
 Para lanzar este pod se ha utilizado este archivo yaml, en el que se ha indicado que servidor web utilizar.   
 Para saber el nombre de la imagen que el pod va a utilizar, hay que buscar en [dockerhub](https://hub.docker.com/search?type=image); que en este caso __Apache2__ es nombrado como **httpd**.  
-Este archivo tiene como nombre apache2.yaml
+Este archivo tiene como nombre[apache2.yaml](https://github.com/Mbonillac/k0s/blob/main/archivos_yaml/apache2.yaml)
 
  ~~~
  apiVersion: v1
