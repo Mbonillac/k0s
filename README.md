@@ -30,6 +30,7 @@ Repositorio para las prácticas de K0s en un servidor virtual.
 * [Kubernetes.io](https://kubernetes.io/es/docs/tasks/tools/install-kubectl/)  
 
 # Licencia
+
 <center>
 
 ![Licencia](https://github.com/Mbonillac/k0s/blob/main/imagenes/licencia.jpg?raw=true)
