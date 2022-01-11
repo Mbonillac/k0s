@@ -1,4 +1,10 @@
-# k0s  
+# k0s 
+
+<center>
+
+![Logo-k0s](https://github.com/Mbonillac/k0s/blob/main/imagenes/k0s-logo-blanco-40.png?raw=true)
+
+</center>
 
 ## Descripción  
 
